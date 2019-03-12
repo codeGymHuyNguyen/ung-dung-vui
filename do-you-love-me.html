@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do You Love Me?</h1>
+<input id="Yes" type="button" onclick="kq();" value="Yes">
+<input id="NO" type="button" onmouseover="kq2();" value="NO" style="position: absolute">
+<script>
+    function kq() {
+        alert("<3")
+    }
+    function kq2() {
+        var c = window.innerHeight;
+        var d = window.innerWidth;
+        var a = Math.random() * c;
+        var b = Math.random() * d;
+        document.getElementById("NO").style.left = a + "px";
+        document.getElementById("NO").style.top = b + "px";
+    }
+</script>
+</body>
+</html>
